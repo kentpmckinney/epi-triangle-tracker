@@ -13,7 +13,7 @@ function check() {
     bEqC = sideB === sideC;
   
     let equilateral = (aEqB && bEqC);
-    let isoceles = (!equilateral) && (aEqB || aEqC || aEqC);
+    let isoceles = (!equilateral) && (aEqB || aEqC || bEqC);
     let scalene = !aEqB && !aEqC && !bEqC;
   
     if (equilateral) { $("#result").text("This is an equilateral triangle.") }
@@ -22,7 +22,7 @@ function check() {
     else { $("#result").text("This is not a triangle.") }
   }
   else { 
-    $("#result").text("This is not a triangle.");
+    $("#result").text("");
   }
 
 }
