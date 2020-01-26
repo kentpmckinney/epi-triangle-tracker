@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+}
+
+.display-container {
+  box-shadow: 0 4px 40px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.1);
+  margin: 20px;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  background: rgba(0,0,0,0.05);
+}
+
+.grid-container {
+  box-shadow: 0 4px 40px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.1);
+  margin: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  background: rgba(0,0,0,0.05);
+}
+
+.grid-item {
+  padding: 10px;
+  text-align: center;
+  align-self: stretch;
+}
