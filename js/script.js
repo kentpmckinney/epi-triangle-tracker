@@ -11,18 +11,19 @@ function check() {
     aEqB = sideA === sideB;
     aEqC = sideA === sideC;
     bEqC = sideB === sideC;
+
+    aGtBC = sideA > (sideB + sideC);
+    bGtAC = sideB > (sideA + sideC);
+    cGtAB = sideC > (sideA + sideB);
   
     let equilateral = (aEqB && bEqC);
-    let isoceles = (!equilateral) && (aEqB || aEqC || aEqC);
+    let isoceles = (!equilateral) && (aEqB || aEqC || bEqC);
     let scalene = !aEqB && !aEqC && !bEqC;
   
-    if (equilateral) { $("#result").text("This is an equilateral triangle.") }
+    if (aGtBC || bGtAC || cGtAB) { $("#result").text("This is not a triangle per the inequality theorem.") }
+    else if (equilateral) { $("#result").text("This is an equilateral triangle.") }
     else if (isoceles) { $("#result").text("This is an isosceles triangle.") }
     else if (scalene) { $("#result").text("This is a scalene triangle.") }
-    else { $("#result").text("This is not a triangle.") }
-  }
-  else { 
-    $("#result").text("This is not a triangle.");
   }
 
 }
