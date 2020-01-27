@@ -24,6 +24,7 @@ function check() {
     else if (equilateral) { $("#result").text("This is an equilateral triangle.") }
     else if (isoceles) { $("#result").text("This is an isosceles triangle.") }
     else if (scalene) { $("#result").text("This is a scalene triangle.") }
+    else { $("#result").text("This is not a triangle.") }
   }
 
 }
