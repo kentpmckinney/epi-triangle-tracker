@@ -40,6 +40,7 @@ Source files are deployable as-is
 * JavaScript
 * HTML
 * CSS
+* Jquery
 
 ## Authors
 
